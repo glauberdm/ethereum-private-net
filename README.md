@@ -199,3 +199,36 @@ Voltando ao terminal geth podemos consultar o saldo novamente:
 ```
 225000000000000000000
 ```
+
+## Mist - Uma interface amigável
+
+### Conectando o Mist à rede RPC local
+
+A rede local precisa estar executando, sugiro abrir um novo terminal para as ações a seguir.
+
+#### Windows
+
+Para conectar o Mist à rede no S.O. Windows basta abrir o Mist, ele automaticamente detecta a rede criado pelo geth.
+
+### Linux
+
+Considerando que o Mist foi configurado no PATH, executar:
+```
+../ethereum-private-net$ mist --rpc private-net/geth.ipc
+```
+
+### Mac OS X
+```
+/Applications/Mist.app/Contents/MacOS/Mist --rpc ~/ethereum-private-net/private-net/geth.ipc # ~ representa /Users/<seu_usuario>
+```
+![alt text](https://github.com/glauberdm/ethereum-private-net/blob/master/misc/mist_splah.png)
+
+Observe no topo superior direito o texto *PRIVATE-NET*, indicando que você está conectado à rede criada no geth.
+
+No Mac OS X é preciso clicar no botão *LAUNCH APPLICATION*. Então a home do Mist será apresentada:
+
+![alt text](https://github.com/glauberdm/ethereum-private-net/blob/master/misc/mist_home.png)
+
+A *MAIN ACCOUNT* é apresentada com alguns Ethers devido a mineração realizada. Se a mineração estiver executando, você observará a quantidade de Ether ser alterada.
+
+A partir desse momento, você já pode realizar transações entre as contas e realizar deploy de contratos.
