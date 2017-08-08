@@ -1,7 +1,0 @@
-eth.accounts
-miner.start(4)
-eth.mining
-eth.getBalance(eth.accounts[0])
-ls
-ll
-clear
