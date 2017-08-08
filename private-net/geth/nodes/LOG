@@ -118,3 +118,5 @@
 19:29:51.467863 table@compaction committed F~ S-474KiB Ke·0 D·29168 T·76.55778ms
 19:29:51.468131 table@remove removed @26
 19:29:51.468677 table@remove removed @24
+19:32:11.864088 db@close closing
+19:32:11.867165 db@close done T·3.06947ms
